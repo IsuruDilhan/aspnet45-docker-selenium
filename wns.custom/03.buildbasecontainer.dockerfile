@@ -10,13 +10,3 @@ RUN powershell -Command choco install jdk8 -y
 RUN powershell -Command choco install javaruntime -y
 RUN powershell -Command choco install nodejs -y
 RUN powershell -Command choco install maven -y
-
-
-# Brute force installers
-#RUN mkdir installers
-#COPY ./installers/ /installers
-#RUN ["C:/installers/ChromeStandaloneSetup64.exe", "/silent", "/install"]
-#RUN ["C:/installers/Firefox Setup 66.0.3.exe", "-ms"]
-
-# BAKE THE IMAGE HERE
-

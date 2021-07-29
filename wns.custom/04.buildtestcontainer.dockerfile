@@ -12,12 +12,13 @@ COPY ./mvchelloworld45/  /inetpub/wwwroot/
 # copy in the tests
 COPY ./SeleniumDockerTest/ /seleniumtests/
 
-# chrome needs fonts to be installed in 2019lts image to work
-RUN powershell -Command C:\\seleniumtests\\Add-Font.ps1 C:\\seleniumtests\\Fonts
-
 # chromedriver is bundled into the official nuget
 # make sure geckodriver is there with the selenium tests
 COPY ./assets/geckodriver-v0.24.0-win64/ /seleniumtests/
 COPY ./05.runtest.ps1 /
+
+# chrome needs fonts to be installed in 2019lts image to work
+RUN powershell -Command C:\\seleniumtests\\Add-Font.ps1 C:\\seleniumtests\\Fonts
+
 USER ContainerAdministrator
 RUN dir \inetpub\wwwroot\

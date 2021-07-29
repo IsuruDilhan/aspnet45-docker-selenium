@@ -15,4 +15,5 @@ COPY ./SeleniumDockerTest/ /seleniumtests/
 # make sure geckodriver is there with the selenium tests
 COPY ./assets/geckodriver-v0.24.0-win64/ /seleniumtests/
 COPY ./05.runtest.ps1 /
+USER ContainerAdministrator
 RUN dir \inetpub\wwwroot\

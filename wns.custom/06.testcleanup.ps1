@@ -2,4 +2,4 @@
 Set-PSDebug -Off
 
 docker container rm wincustomaspnet48testsrun -f
-docker image rm wincustomaspnet48tests -f
+#docker image rm wincustomaspnet48tests -f

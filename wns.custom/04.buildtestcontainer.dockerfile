@@ -20,8 +20,5 @@ COPY ./05.runtest.ps1 /
 # chrome needs fonts to be installed in 2019lts image to work
 RUN powershell -Command C:\\seleniumtests\\Add-Font.ps1 C:\\seleniumtests\\Fonts
 
-# install selenium test package
-RUN powershell -Command cd C:\\seleniumtests\\TestSelenium\\; mvn clean test -Dsuite=regression -P=regression '-Dtestng.dtd.http=true';
-
 USER ContainerAdministrator
 RUN dir \inetpub\wwwroot\

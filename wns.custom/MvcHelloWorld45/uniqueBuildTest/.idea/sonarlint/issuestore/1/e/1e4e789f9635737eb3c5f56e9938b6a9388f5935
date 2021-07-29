@@ -1,18 +1,0 @@
-
-Z	java:S106*"9Replace this use of System.out or System.err by a logger.(‹²›êÿÿÿÿÿ8§‡²ù.
-v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ïĞÑş8ÍÉÁÁí.
-Q
-java:S2209a"5Change this instance-reference to a static reference.(´ã8ÍÉÁÁí.
-]	java:S125P"<This block of commented-out lines of code should be removed.(¢°ˆüÿÿÿÿ8†…—‘ô.
-P
-java:S1128"3Remove this unused import 'org.testng.ITestResult'.(ä¡±‘8ÿÜç£ù.
-F
-java:S1128")Remove this unused import 'java.io.File'.(†Ğ¥Å8ÍÉÁÁí.
-X	java:S125>"<This block of commented-out lines of code should be removed.(ÑÉ¸û8ÿÜç£ù.
-X	java:S125D"<This block of commented-out lines of code should be removed.(ÑÉ¸û8ÿÜç£ù.
-E
-java:S1148d"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÍÉÁÁí.
-I
-java:S2440",Remove this instantiation of "SearchGoogle".(üÅşÉ8ÿÜç£ù.
-E
-java:S1148m"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÍÉÁÁí.

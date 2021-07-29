@@ -25,4 +25,3 @@ ENV ROSLYN_COMPILER_LOCATION c:\\RoslynCompilers\\tools
 EXPOSE 80
 
 ENTRYPOINT ["C:\\ServiceMonitor.exe", "w3svc"]
-#ENTRYPOINT ["notepad"]

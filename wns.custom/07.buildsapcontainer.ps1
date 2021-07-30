@@ -3,7 +3,7 @@ Write-Host "Windows Custom Build  - STEP 07 - Add sap files to win10 container"
 Set-PSDebug -Trace 0
 # Set-PSDebug -Off
 
-docker build -f 07.buildsapcontainer.ps1 -t wincustomsap . 
+docker build -f 07.buildsapcontainer.dockerfile -t wincustomsap . 
 
 docker run -d --name wincustomsaprun -p 8080:80 wincustomsap
 

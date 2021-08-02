@@ -15,4 +15,4 @@ SHELL ["powershell", "-Command", "$ErrorActionPreference = 'Stop'; $ProgressPref
 
 RUN Start-Process C:\sap\PRES1\GUI\WINDOWS\Win32\Setup\NwSapSetup.exe '/Product:"SAPGUI+KW+GUIISHMED+SAPWUS+NWBC65+SCE+SapBI" /silent' -Wait; `
 
-RUN dir C:\ProgramData\Microsoft\Windows\Start Menu\Programs `
+RUN dir \

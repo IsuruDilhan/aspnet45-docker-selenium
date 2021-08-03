@@ -14,10 +14,12 @@ SHELL ["powershell", "-Command", "$ErrorActionPreference = 'Stop'; $ProgressPref
 
 RUN Start-Process "C:\sap\PRES1\GUI\WINDOWS\Win32\Setup\NwSapSetup.exe" '/Product:"SAPGUI+KW+GUIISHMED+SAPWUS+NWBC65+SCE+SapBI+NWBCGUI" /silent' -Wait;
 
-RUN Start-Process -FilePath "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\SAP Front End\SAP Logon.lnk"
+#RUN Start-Sleep -s 20
 
-RUN ps
+RUN Start-Process "C:\ProgramData\Microsoft\Windows\'Start Menu'\Programs\'SAP Front End'\'SAP Logon.lnk'";
+
 
 RUN dir -Force .\Users\ContainerAdministrator\AppData\Roaming\SAP\Common\
 
-RUN Stop-Process -Name saplogon
+# copy sap config file
+COPY ./sapfiles/CONFIG ./Users/ContainerAdministrator/AppData/Roaming/SAP/Common/
